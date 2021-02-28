@@ -1,0 +1,46 @@
+seata:
+  enabled: true
+  application-id: storage-service
+  tx-service-group: my_test_tx_group
+  enable-auto-data-source-proxy: true
+  use-jdk-proxy: false
+  config:
+#    type: nacos 不能打开
+
+    nacos:
+      server-addr: localhost:8848
+      group: SEATA_GROUP
+      username:
+      password:
+
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: localhost:8848
+      namespace:
+      username:
+      password:
+
+server:
+  port: 8083
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+  #  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/storage
+#    username: root
+#    password: dyzwj
+
+  application:
+    name: storage-service
