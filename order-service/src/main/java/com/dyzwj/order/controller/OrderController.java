@@ -24,10 +24,6 @@ public class OrderController {
     @Autowired
     StorageFeignClient storageFeignClient;
 
-    @PostMapping("/addStorage")
-    public String addStorage(){
-        return storageFeignClient.addStorage();
-    }
 
     @PostMapping("/order")
     public String insertOrder(){
@@ -45,12 +41,12 @@ public class OrderController {
         return s;
     }
 
-    @Value("${store.mode}")
-    private String mode;
+    @Value("${service.vgroupMapping.my_test_tx_group}")
+    private String group;
 
     @GetMapping("/property")
     public String property(){
-        return mode;
+        return group;
     }
 
 

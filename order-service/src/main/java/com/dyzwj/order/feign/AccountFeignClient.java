@@ -3,10 +3,9 @@ package com.dyzwj.order.feign;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 
+@FeignClient(name = "account-service")
+public interface AccountFeignClient {
 
-@FeignClient(name = "storage-service")
-public interface StorageFeignClient {
-
-    @PostMapping("/storage")
-    String decreaseStorage();
+    @PostMapping("/account")
+    String decreaseAccount();
 }
