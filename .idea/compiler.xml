@@ -7,17 +7,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="account-service" />
+        <module name="sentinel-service" />
         <module name="order-service" />
         <module name="storage-service" />
+        <module name="account-service" />
+        <module name="vote" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="untitled" target="8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="account-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
+      <module name="sentinel-service" options="-parameters" />
       <module name="storage-service" options="-parameters" />
+      <module name="untitled" options="-parameters" />
+      <module name="vote" options="-parameters" />
     </option>
   </component>
 </project>
