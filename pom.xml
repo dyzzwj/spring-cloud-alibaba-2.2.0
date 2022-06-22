@@ -30,8 +30,8 @@
 
         <!-- Spring Settings -->
         <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
-<!--        <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>-->
-        <spring-cloud-alibaba.version>1.5.1.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
+<!--        <spring-cloud-alibaba.version>1.4.1.RELEASE</spring-cloud-alibaba.version>-->
     </properties>
 
 
